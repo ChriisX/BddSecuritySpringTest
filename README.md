@@ -54,5 +54,4 @@ If before launching your application you want to add some accounts, here are the
 
 You are now ready!\
 Launch the application using the configuration you made.\
-![alt text](http://image.noelshack.com/fichiers/2018/37/4/1536842102-capture-du-2018-09-13-14-34-24.png "Login Page")\
 If I forgot anything, or something doesn't work, please tell me so I can fix the **readme**

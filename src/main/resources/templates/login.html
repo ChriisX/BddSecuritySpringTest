@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" th:href="@{'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css'}">
+    <link type="text/css" rel="stylesheet" href="../static/css/console-style.css" th:href="@{/css/console-style.css}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="console">
+        <div class="title-bar">
+            <h1>Console</h1>
+        </div>
+        <div class="interface">
+            <h1>> <span id="title"></span></h1>
+            <form th:action="@{/login}" method="POST">
+                <div class="field">
+                    <label for="username">Username:</label>
+                    <div class="console-input">> <input type="text" id="username" name="username" placeholder="Username" /></div>
+                </div>
+                <div class="field">
+                    <label for="password">Password:</label>
+                    <div class="console-input">> <input type="password" id="password" name="password" placeholder="Password" /></div>
+                </div>
+                <div class="field">
+                    <input class="button" type="submit" value="> Enter <" />
+                </div>
+            </form>
+
+            <div th:if="${param.error}" class="hero is-danger message">
+                <span th:text="${'ERROR > Wrong credentials'}" />
+            </div>
+        </div>
+    </div>
+
+    <form class="redirect-form" th:action="@{register}" method="GET">
+        <input class="button is-light" type="submit" value="> Register instead <" />
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9" th:src="@{'https://cdn.jsdelivr.net/npm/typed.js@2.0.9'}"></script>
+    <script>
+        var typed = new Typed('#title', {
+            strings: [
+                "./login"
+            ]
+        });
+    </script>
+</body>
+</html>

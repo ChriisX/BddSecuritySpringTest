@@ -1,0 +1,112 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    background: #2c363f;
+
+    color: white;
+}
+
+.label{
+    color: white;
+    margin-bottom: 0;
+}
+
+.input, .button{
+    background: rgb(38, 38, 38);
+    color: white;
+    border: none;
+    max-width: 90%;
+}
+
+.console{
+    position: absolute;
+    height: 35vh;
+    width: 40vw;
+
+    top: 32.5vh;
+    left: 30vw;
+
+    background: white;
+
+    border-radius: 5px 5px 0 0;
+
+    overflow: hidden;
+
+    box-shadow: 0px 0px 20px 8px #232b31;
+}
+
+.title-bar{
+    width: 100%;
+    height: 25px;
+
+    background: lightgrey;
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.interface{
+    width: 100%;
+    height: calc(100% - 25px);
+
+    background: rgba(0, 0, 0, 0.85);
+
+    padding: 5%;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.title-bar h1{
+    color: black;
+    margin-left: 10px;
+}
+
+form{
+    margin-top: 2%;
+}
+
+.console-input{
+    display: flex;
+    justify-content: left;
+
+    vertical-align: middle;
+
+    margin: 5px 0px 5px 0px
+}
+
+.input::placeholder{
+    color: darkgrey;
+}
+
+.button{
+    text-decoration: underline;
+}
+
+input[type="text"], input[type="password"]{
+    background: rgb(38, 38, 38);
+    color: white;
+    border: none;
+    max-width: 90%;
+
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.message{
+    padding: 10px;
+}
+
+.redirect-form{
+    width: 20vw;
+    position: absolute;
+    bottom: 15vh;
+    left: 40vw;
+}
+
+.redirect-form input{
+    max-width: 100%;
+    width: 100%;
+}

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" th:href="@{'https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css'}">
+    <link type="text/css" rel="stylesheet" href="../static/css/console-style.css" th:href="@{/css/console-style.css}">
+    <link type="text/css" rel="stylesheet" href="../static/css/substyles/profile.css" th:href="@{/css/substyles/profile.css}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<p sec:authentication="name"></p>
+</body>
+</html>
